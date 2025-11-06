@@ -17,7 +17,7 @@ int main() {
     }
 
     printf("Student Results:\n");
-    printf("-----------------\n");
+    printf("\n");
 
     while (fread(&s, sizeof(struct Student), 1, file)) {
         printf("Name: %s\nReg No: %s\nMarks: %.2f\n\n", s.name, s.regNo, s.marks);
@@ -25,4 +25,5 @@ int main() {
 
     fclose(file);
     return 0;
+
 }
